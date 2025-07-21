@@ -1,23 +1,32 @@
-# Project Empty Template
+# Mini App Task
+by Alexander Barragán
 
-This is a sample repository for you to start developing the task. Please carefully read the requirements of the task statement on the platform and follow best practices on how to use this repository.
+## Description
+This a simple one-screen Flutter app that features a list of dropdown items fetched from a simulated API call.
 
-## Repository Readme
+## Considerations
+- I left the call with my recruiter under the impression that I would have two days to complete the task. I didn't know it was actually a timed task and when I started the assessment, I didn't have the availability to complete this task.
+- I asked my recruiter for permission to complete it out of Coodesh. Permission was granted.
+- No IA tools like LLMs were used to complete this task as shown on the attached videos
+- Documentation and own notes were used, though.
+- I was unable to save the original instructions for the task before exiting from the Coodesh platform, si this task was completed under many assumtioms originated from what I remember about those instructions.
 
-- It should contain the project title
-- A one-sentence description about the project
-- It should include a list of languages, frameworks, and/or technologies used
-- How to install and use the project (instructions)
-- Don’t forget the .gitignore
-- If you are using a personal GitHub, mention that it is a challenge by Coodesh:
+## Details
+- API call simulation works thorugh a Future.delayed and a local json as a mock response.
+- No configs for http or dio were actually coded but they were mentioned, considered and described in the attached videos.
+- Each dropdown item allows the user to mark it as favourite.
+- Favourites do not persist because of lack of time to implemented shared_preferences. However, a description on how I wuld have approached that functionality is included on the attached videos.
+- Searchbar was not implemented because of lack of time.
+- All state management was handled through Riverpod providers.
+- A custom clean architecture effort was done to keep a maintainable project structure. It was designed under the assumption that the item list would be only one module of a growing app.
+- UI was clearly separated from business logic and any other type logic.
 
-> This is a challenge by Coodesh
+## Video recordings of the development of the task
+My coding session for this task was screen recorded into two parts and uploaded to Google Drive. You will find them by following the link below:
+https://drive.google.com/drive/folders/1C3-0Ff5k9opFHpFjFstEHEjnKqik_Drd?usp=sharing
 
-## Completion and Submission Instructions
-1. Add the link to the repository with your solution to the task on the platform
-2. Check if the Readme is good and make the final commit to your repository
-3. Submit and wait for further instructions. If the test requires a video presentation, it will be possible to record it on the submission screen after adding the repository link. Good luck and success! =)
+## Last annotations
 
-## Support
+I appreciate your felxibility. I tried to be as transparent as possible about the resources I used and definitely did not use AI, which would have interestingly -and probably- enabled me to finish the task within the given 80 minutes. I hope this helps you determine whether we could be a successful match or not. 
 
-For questions about the process, send a message directly to a specialist in the platform chat.
+Have a nice day!
